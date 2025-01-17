@@ -33,8 +33,14 @@ void main() {
     a.isNotEmpty;
   }
 
-  final c = 10;
+  final c;
+  c = 10;
+  print(c);
 
   // c is a final variable, so it cannot be reassigned
   // c = 20;
+
+  late final String d;
+  d = 'Hello';
+  print(d);
 }
