@@ -33,10 +33,11 @@ void main() {
   // }
 
   // string interpolation
-  var greeting = 'Hello, my name is $name and I am ${age + 1} years old';
+  var greeting = 'Hello, I\'m $name and I am ${age + 1} years old';
 
   print(greeting);
 
+  // Collection For
   var oldFriends = ['John', 'Jane', 'Doe'];
 
   var newFriends = [
@@ -47,4 +48,25 @@ void main() {
   ];
 
   print(newFriends);
+
+  // maps
+  var player = {'name': 'james', 'xp': 19.99, 'superpower': false};
+
+  // dart에서 object는 any라고 보면 됨
+
+  Map<int, bool> James = {
+    1: true,
+    2: false,
+  };
+
+  Map<List<int>, bool> JamesTeacher = {
+    [1, 2, 3]: true
+  };
+
+  List<Map<String, Object>> JamesStudent = [
+    {
+      'name': [123]
+    },
+    {'james': 'I love u'}
+  ];
 }
