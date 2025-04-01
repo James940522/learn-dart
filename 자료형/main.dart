@@ -69,4 +69,6 @@ void main() {
     },
     {'james': 'I love u'}
   ];
+
+  final Set<String> names = {'Code', 'Flutter', 'Black Pink'};
 }
